@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="lab13mvm.MainPage">
+
+    <StackLayout>
+        <Entry Placeholder="Valor1" Text="{Binding Valor1}" />
+        <Entry Placeholder="Valor2" Text="{Binding Valor2}" />
+        <Entry Placeholder="Valor3" Text="{Binding Valor3}" />
+
+        <Button Text="Sumar" Command="{Binding SumarCommand}" />
+        <Button Text="Multiplicar" Command="{Binding MultiplicarCommand}" />
+
+        <Label Text="{Binding Resultado}" />
+    </StackLayout>
+
+</ContentPage>
